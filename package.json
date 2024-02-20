@@ -1,0 +1,32 @@
+{
+  "name": "namaste_react",
+  "version": "1.0.0",
+  "description": "Namste react episodes",
+  "scripts": {
+    "test": "jest",
+    "start": "npx parcel index.html",
+    "build": "npx parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjeevikumar/ReactBasics.git"
+  },
+  "keywords": [],
+  "author": "sanjeevi Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanjeevikumar/ReactBasics/issues"
+  },
+  "homepage": "https://github.com/sanjeevikumar/ReactBasics#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browsersList": [
+    "last 2 versions"
+  ]
+}
