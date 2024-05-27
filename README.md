@@ -117,7 +117,8 @@ const Heading = <h1 className="remote">Welcome to react basics</h1>;
 const HeadingComponent = () => (
 
   <div id="container">
-    {Heading};<h1 className="heading">{courseName}</h1>
+    {Heading};
+    <h1 className="heading">{courseName}</h1>
   </div>
 );
 
@@ -172,7 +173,19 @@ React is efficient in DOM manipulation
 Hooks are normal javascript function
 whenever a state variable updates react will rerender the component.
 Two major important hooks which we frequently use:
-useState()- Generates superpowerful state Variables in react
+useState():
+
+- Generates superpowerful state Variables in react
+  Concept of useState: Why we use and when we use ?
+
+How const variable in the react is getting modified as const keyword cannot be modified?
+
+- Whenever the component is re-rendered the const variable will be considered as a new variable, that's how we are modifying the const in react.
+
+When Reconcilaition cycle is triggered?
+
+-Whenever state variables are updated. React triggers the reconciliation cycle(Re-renders the component).
+
 useEffect() - useEffect basically works after the component is rendered in the application,one of practical scenario where we work with this hook is to fetch an API(service).
 useEffect: requires two arguments,1.CallbackFunction, 2. Dependency array
 
@@ -207,3 +220,7 @@ CallBack Function will be called after the component renders.
 # What is CORS Policy?
 
 - Browser used to block the access to the api when it finds the different host(eg:Local Host) than the origin.
+
+# Shimmer UI
+
+-To improve the userexperience(UX). we load a dummy page till the time api fetches the actual data.

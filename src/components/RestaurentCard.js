@@ -12,7 +12,8 @@ const RestaurentCard = (props) => {
     avgRating,
     sla,
   } = resData?.info;
-  const { deliveryTime } = sla ? sla.deliveryTime : null;
+  const { slaString } = sla;
+  console.log("Delivery", slaString);
 
   return (
     <div className="restaurent">
@@ -23,7 +24,7 @@ const RestaurentCard = (props) => {
       />
       <h3 className="resName">{name}</h3>
       <h3 className="starRating">{avgRating}</h3>
-      <h3 className="eta">{deliveryTime}</h3>
+      <h3 className="eta">{slaString}</h3>
       <h3 className="cusines">{cuisines.join(",")}</h3>
       <h3 className="location">{locality}</h3>
       <h4 className="areaName">{areaName}</h4>
